@@ -5,19 +5,7 @@ const Discord = require("discord.js"),
       // JIMP was the best manipulate PNG module I found
     PNG = require('jimp2'),
     https = require('https'),
-    Stream = require('stream').Transform,
-    http = require('http'),
-    express = require('express'),
-    app = express();
-
-app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received");
-  response.sendStatus(200);
-});
-app.listen(process.env.PORT);
-setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-}, 3600000);
+    Stream = require('stream').Transform;
 
 // Bot running
 client.on('ready', () => {
