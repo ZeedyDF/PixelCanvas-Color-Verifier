@@ -1,11 +1,12 @@
 // Variables
-const Discord = require("discord.js"),
+  const Discord = require("discord.js"),
     client = new Discord.Client(),
     fs = require('fs'),
       // JIMP was the best manipulate PNG module I found
     PNG = require('jimp2'),
     https = require('https'),
-    Stream = require('stream').Transform;
+    Stream = require('stream').Transform,
+    config = require('./config.json');
 
 // Bot running
 client.on('ready', () => {
@@ -14,7 +15,7 @@ client.on('ready', () => {
 
 // Bot on message
 client.on('message', message => {
-    let Prefix = ">";
+    let Prefix = config.prefix;
     let PREFIX = Prefix;
 
     if (message.content.toLowerCase() == Prefix + "check") {
@@ -152,4 +153,4 @@ client.on('message', message => {
 
     }
 });
-client.login("Your_Token_Here");
+client.login(config.token);
