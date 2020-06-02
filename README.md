@@ -30,6 +30,3 @@ Now your bot should works!
 Ex: prefix = ".";
 - If you want to change the command just search Prefix + "check" then you change to yours;
 Ex: "checkColors", "colorsCheck", "rgbCheck";
-
-# TODO: 
-- Config File;
