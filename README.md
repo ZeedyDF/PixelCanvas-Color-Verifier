@@ -8,8 +8,9 @@ Discord.js bot that verify if your template has the same canvas colors!
 
 # How to setup?
 
-- Open the "checkColors.js" file with a text editor.
-- Search for ("Your_Token_Here") then replace with your bot token 
+- Open the "config.json" file with a text editor.
+- Replace "Your super secret token here" with your bot token
+- Replace "Your sweet prefix here" with your prefix
 - Open cmd in the folder.
 - Install some modules: 
 
